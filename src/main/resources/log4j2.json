@@ -1,0 +1,24 @@
+{
+  "configuration": {
+    "name": "Default",
+    "appenders": {
+      "Console": {
+        "name": "Console",
+        "target": "SYSTEM_OUT",
+        "PatternLayout": {
+          "pattern": "[%-5level] [%d{HH:mm:ss dd-MM-yyyy}] - %m%n"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "all",
+        "appender-ref": [
+          {
+            "ref": "Console"
+          }
+        ]
+      }
+    }
+  }
+}
